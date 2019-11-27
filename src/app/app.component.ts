@@ -15,7 +15,7 @@ export class AppComponent {
     this.httpService.get('./assets/testimony.json').subscribe(
       data => {
         this.arrBirds = data as string[];	 // FILL THE ARRAY WITH DATA.
-        console.log(this.arrBirds[1]);
+
       },
       (err: HttpErrorResponse) => {
         console.log(err.message);
