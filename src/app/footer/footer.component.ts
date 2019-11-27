@@ -8,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   constructor() { }
-
+  name: string;
+  email: any;
+  phone: number;
+  msg: string;
   ngOnInit() {
+  }
+  submitquery() {
+    this.name = '';
+    this.email = '';
+    this.phone = null;
+    this.msg = '';
+    console.log("send")
   }
 
 }
+
