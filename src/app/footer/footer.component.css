@@ -6,9 +6,12 @@
     padding: 10px 80px;
 }
 .right{
-    float: right;
+    /* float: right; */
 }
-
+.lefte{
+    float: left;
+    margin-right: 60%;
+}
 .right img{
     
      width: 35px;

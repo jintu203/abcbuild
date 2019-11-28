@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SliderComponent } from './slider/slider.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { SlideshowModule } from 'ng-simple-slideshow';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule, HttpClientModule
+    AppRoutingModule, FormsModule, HttpClientModule, SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
