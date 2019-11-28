@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="bodycontainer">
+    <div class="tab">
+
+    </div>
+    <div class="slider">
+        <app-slider></app-slider>
+    </div>
+    <div class="projects row">
+        <div class="upcoming col" (click)="projects()">
+            <p class="pjtheader">Upcoming projects</p>
+            <img src="assets/images/flat1.png">
+        </div>
+        <div class="ongoing col" (click)="projects()">
+            <p class="pjtheader">Ongoing projects</p>
+            <img src="assets/images/flat1.png">
+        </div>
+        <div class="completed col" (click)="projects()">
+            <p class="pjtheader">Completed projects</p>
+            <img src="assets/images/flat1.png">
+        </div>
+    </div>
+    <div class="testimony projects" style="background-color: #e3dbcf54;
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,.10);
+">
+        <p class="heading">Customer Reviews</p>
+
+        <div class="row" *ngFor="let test of arrBirds">
+            <div class="column" style="width:15%">
+                <img src={{test.image}} width="100"><br>
+
+            </div>
+            <div class="column" style="">
+
+                <p style="font-family:cursive;">{{test.testimony}}</p>
+                <div style="float: right;">
+                    <p>--</p>
+                    <p style="font-style: italic;"> <span></span>{{test.Name}} ,<span>{{test.desg}}</span></p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="foot">
+    <app-footer></app-footer>
+
+
+
+
+
+</div>
