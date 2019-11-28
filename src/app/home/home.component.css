@@ -300,13 +300,13 @@
 }
 .col{
     float: left;
-  width: 26%;
+  width: 30%;
   padding: 0px 35px;
   min-height: 100px; 
  
 }
 .col img{
-    width: 240px;
+    width: 260px;
      cursor: pointer;
 }
 .bodycontainer{
@@ -340,4 +340,7 @@
 }
 .foot{
  background: #f6f6f6;;
+}
+.upcoming{
+      margin-left: 76px;
 }
